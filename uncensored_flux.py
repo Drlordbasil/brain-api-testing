@@ -22,10 +22,3 @@ def save_image(image, prompt):
     image.save(image_path)
     print(f"Image saved to {image_path}")
     return image_path  # Return the file path
-
-# Example usage
-if __name__ == "__main__":
-    prompt = "Astronaut riding a horse"
-    image = generate_image(prompt)
-    save_image(image, prompt)
-    image.show()
