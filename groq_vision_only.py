@@ -54,14 +54,6 @@ class ImageAnalyzer:
         
         return f"data:image/jpeg;base64,{base64_image}"
 
-if __name__ == "__main__":
-    analyzer = ImageAnalyzer()
-    # Test with a local image
-    local_image_path = "C:\\Users\\drlor\\OneDrive\\Desktop\\generated_images_folder\\Astronaut_riding_a_horse.png"
-    print(analyzer.analyze_image(local_image_path))
-    # Test with a URL image
-    url_image = "https://politizoom.com/wp-content/uploads/2024/08/Screenshot-2024-08-16-113616.png"
-    try:
         print(analyzer.analyze_image(url_image))
     except ValueError as e:
         print(e)
