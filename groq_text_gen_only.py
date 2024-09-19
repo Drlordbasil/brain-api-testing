@@ -45,16 +45,4 @@ def generate_text(prompt, history=None):
     
     return response, history
 
-# Example usage
-if __name__ == "__main__":
-    session_name = "example_session"
-    prompt = "Explain the importance of fast language models"
-    
-    # Load existing session or start a new one
-    chat_history = load_session(session_name)
-    response, chat_history = generate_text(prompt, chat_history)
-    
-    print(response)
-    
-    # Save the session
     save_session(chat_history, session_name)
